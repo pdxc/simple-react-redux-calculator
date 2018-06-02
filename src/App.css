@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #222;
+  padding: 20px;
+  margin-bottom: 50px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.history {
+	padding-bottom: 10px;
+	text-align: right;
+}
+
+.historyLine {
+	border-bottom: 1px solid #ccc;
+	width: 250px;
+	padding: 10px;
+	margin: auto;
+	margin-bottom: 5px;
+}
+.historyLine:last-of-type {
+	border: none;
+}
+
+.currentOperation {
+	border: 1px solid #ccc;
+	border-bottom: none;
+	text-align: center;
+	width: 250px;
+	height: 10px;
+	padding: 25px;
+	margin: auto;
+	border-radius: 15px 15px 0px 0px;
+	overflow: hidden;
+}
+
+.calculator {
+	border: 1px solid #ccc;
+	border-top: none;
+	text-align: center;
+	width: 250px;
+	padding: 25px;
+	margin: auto;
+	margin-bottom: 20px;
+	border-radius: 0px 0px 15px 15px;
+}
+
+.numbers {
+	display: inline-block;
+}
+
+.operators {
+	display: inline-block;
+}
+
+input {
+	height: 50px;
+	width: 50px;
+	margin: 5px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	box-shadow: 0 1px 5px 0 rgba(0,0,0,0.16), 0 1px 2px 0 rgba(0,0,0,0.26);
+	border-radius: 25px;
+}
+
+input:active {
+	color: blue;
+	border: 2px solid blue;
+	box-shadow: none;
+	outline: none;
+}
+
+input:focus {
+	outline: none;
+}
+
