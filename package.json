@@ -11,12 +11,15 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "tsc && react-scripts build",
     "format": "prettier --write \"src/**/*.js\"",
-    "test": "react-scripts test --env=jsdom",
+    "test": "tape test/*.js",
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "prettier": "^1.13.4"
+    "@types/node": "^10.0.4",
+    "typescript": "^2.8.3",
+    "prettier": "^1.13.4",
+    "tape": "^4.9.0"
   }
 }
