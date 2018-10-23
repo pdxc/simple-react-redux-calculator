@@ -47,6 +47,7 @@ const getResult = (operands, operator) => {
 }
 
 const mainReducer = (state = defaultState, action) => {
+	console.log('action', action)
 	switch (action.type) {
 		case 'PRESS_NUMBER': {
 			const newOperands = [...state.operands]

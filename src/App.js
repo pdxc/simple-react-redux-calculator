@@ -101,6 +101,21 @@ const mapStateToProps = state => {
 	return state
 }
 
+const pe = () => {
+	console.log('Hi there')
+	return dispatch => {
+		console.log('Hey')
+		setTimeout(() => {
+			dispatch({
+				type: 'FLIP_SIGN',
+			})
+		}, 10000)
+		dispatch({
+			type: 'PRESS_EQUAL',
+		})
+	}
+}
+
 const mapDispatchToProps = dispatch => {
 	return {
 		clearAll: () => {
@@ -119,9 +134,7 @@ const mapDispatchToProps = dispatch => {
 			})
 		},
 		pressEqual: () => {
-			dispatch({
-				type: 'PRESS_EQUAL',
-			})
+			dispatch(pe())
 		},
 		pressNumber: number => {
 			dispatch({

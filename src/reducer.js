@@ -44,6 +44,7 @@ var getResult = function (operands, operator) {
 };
 var mainReducer = function (state, action) {
     if (state === void 0) { state = defaultState; }
+    console.log('action', action);
     switch (action.type) {
         case 'PRESS_NUMBER': {
             var newOperands = state.operands.slice();
