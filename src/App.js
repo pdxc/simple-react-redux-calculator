@@ -36,7 +36,7 @@ class App extends Component {
 					<div className="special">
 						<input type="button" onClick={() => clearAll()} value="AC" />
 						<input type="button" onClick={() => clearEntry()} value="CE" />
-						<input type="button" onClick={() => flipSign('8')} value="+/-" />
+						<input type="button" onClick={() => flipSign()} value="+/-" />
 						<input type="button" onClick={() => pressOperator('^')} value="^" />
 					</div>
 					<div className="numbers">
